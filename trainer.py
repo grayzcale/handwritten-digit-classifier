@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import os
 
 # Training parameters
-EPOCHS = 7
+EPOCHS = 10
 BATCH_SIZE = 100
-LEARNING_RATE = .001
+LEARNING_RATE = .0009
 
 # Set device to CUDA if available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

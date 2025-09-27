@@ -2,7 +2,7 @@ from torchvision import transforms
 import torch.nn as nn
 
 INPUTS = 784
-HIDDEN_NODES = 128
+HIDDEN_NODES0 = 128
 OUTPUTS = 10
 
 TRANSFORM = transforms.Compose([
@@ -16,9 +16,9 @@ class NeuralNetwork(nn.Module):
 		super().__init__()
 		
 		# Network layers
-		self.inputs = nn.Linear(INPUTS, HIDDEN_NODES)
+		self.inputs = nn.Linear(INPUTS, HIDDEN_NODES0)
 		self.relu = nn.ReLU()
-		self.outputs = nn.Linear(HIDDEN_NODES, OUTPUTS)
+		self.outputs = nn.Linear(HIDDEN_NODES0, OUTPUTS)
 
 	# Forward pass method
 	def forward(self, x):
