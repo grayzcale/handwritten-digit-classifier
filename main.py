@@ -22,7 +22,7 @@ model.eval()
 class Window():
 	def __init__(self, root: tk.Tk):
 		self.root = root
-		root.title("Pixelated Number Classifier")
+		root.title("Digit Classifier")
 		root.resizable(False, False)
 
 		# Initilize grid size
