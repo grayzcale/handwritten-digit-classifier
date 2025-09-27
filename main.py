@@ -47,10 +47,12 @@ class Window():
 		self.clear_button.grid(sticky="ew")
 
 	# Process image and output results
-	def predict(self, ev):
+	def predict(self, _):
 
 		# Resize image to 28x28
 		resized = self.image.resize((28, 28))
+		
+		# resized.save("a.png")
 
 		# Convert image to tensor of floats
 		img_tensor = TRANSFORM(resized).float()
