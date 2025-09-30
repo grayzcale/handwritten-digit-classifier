@@ -76,7 +76,7 @@ with torch.no_grad():
 	acc = 100.0 * n_correct / n_samples
 	print(f'Accuracy of the network on the 10000 test images: {acc:.2f} %')
 	
-img, label = test_minst[0]
-plt.imshow(img.squeeze(), cmap="gray")
-plt.title(f"Label: {label}")
-plt.savefig("img.png")
+# img, label = test_minst[0]
+# plt.imshow(img.squeeze(), cmap="gray")
+# plt.title(f"Label: {label}")
+# plt.savefig("img.png")
